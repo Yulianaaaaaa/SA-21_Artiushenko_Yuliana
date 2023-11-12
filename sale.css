@@ -1,0 +1,518 @@
+body {
+    max-width: 1535px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fcf9e9;
+    font-family: 'Literata';
+}
+
+
+.main-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 260px;
+    background-color: #FEE8D3;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    font-size: 38px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+.menu_block {
+    padding: 0px 90px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px 20px 0px 20px;
+    justify-content: space-between;
+    height: 65px;
+
+
+}
+
+.menu h3 {
+    display: flex;
+    font-size: 24px;
+    padding: 8px 10px;
+    border-radius: 40px;
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+    background-color: #E7E7E7;
+    flex-grow: 4;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.6);
+}
+
+.menu h3 a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.sentense1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 61px 101px 54px 101px;
+}
+
+.sentense1 p {
+    font-size: 36px;
+}
+
+.palka{
+    border: 2px solid black;
+}
+
+.video_block {
+    max-width: 100%;
+    /* Робить блок адаптивним для різних екранів */
+    height: auto;
+    /* Робить блок високим відповідно до співвідношення сторін відео */
+}
+
+video {
+    max-width: 600px;
+    /* Робить відео адаптивним для різних екранів */
+    height: auto;
+    /* Робить відео високим відповідно до співвідношення сторін відео */
+}
+
+.source {
+    max-width: 100%;
+    /* Робить джерело відео адаптивним для різних екранів */
+    height: auto;
+    /* Робить джерело відео високим відповідно до співвідношення сторін відео */
+    margin-top: 25px;
+}
+
+
+
+
+
+.block_2 {
+    display: flex;
+    margin: 0px 25px 0px 25px;
+}
+
+.chomy_oburaut {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.chomy_oburaut h2 {
+    font-size: 44px;
+    margin: 35px 80px 25px 100px;
+    text-shadow: 2px 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+
+.palka1 {
+    /* width: 582px; */
+    border: 2px solid black;
+    margin: 0px 80px 51px 100px;
+}
+
+.container1 {
+    background-color: #FEE8D3;
+    border: 2px solid black;
+    margin: 0px 60px 0px 64px;
+
+}
+
+.container1 p {
+    font-size: 24px;
+    margin: 40px 44px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    right: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #616161;
+
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+
+    width: 300px;
+    height: 30%;
+
+    margin: 0;
+    padding: 80px 0;
+
+    list-style: none;
+
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+
+    color: #333;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition-duration: .25s;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+
+
+
+.pc-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px 20px 0px 20px;
+    justify-content: space-between;
+    height: 65px;
+
+
+
+}
+
+.pc-menu h3 {
+    display: flex;
+    font-size: 24px;
+    padding: 8px 20px;
+    border-radius: 40px;
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+    background-color: #E7E7E7;
+    flex-grow: 4;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+
+h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+    .video_block{
+
+        margin-top: 30px;
+    }
+
+
+.purchase-button {
+    padding: 10px 20px;
+    background-color:#efbe90;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto;
+    font-size: 24px;
+    border: 2px solid black;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+
+.purchase-button:hover {
+    background-color: #8b4513;
+}
+
+
+
+
+
+
+
+.four_blocks {
+    display: flex;
+    justify-content: space-around;
+    /* або інший варіант вирівнювання */
+    flex-wrap: wrap;
+    /* дозволяє елементам переходити на новий ряд, якщо не вистачає місця */
+}
+
+.two_blocks_one,
+.two_blocks_two {
+    flex: 1;
+}
+
+.two_blocks_one h2,
+.two_blocks_two h2 {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 3px 7px rgba(0, 0, 0, 0.6);
+    margin-top: 60px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEE8D3;
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 500px;
+    height: 550px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    
+}
+
+.container2:hover {
+    background-color: #da9360;
+}
+
+
+.container2 p {
+    font-size: 24px;
+    margin: 20px 44px;
+     justify-content: center;
+    align-items: center;
+}
+
+.palka2 {
+    border: 2px solid black;
+    justify-content: center;
+    width: 300px;
+}
+.end {
+    position: relative;
+    margin: 60px 0px 32px 0px;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 1370px) {
+.container1 {
+    margin: 0px 20px 0px 20px;
+}
+}
+
+
+@media screen and (max-width: 1200px) {
+        .hamburger-menu {
+        display: block;
+    }
+    .pc-menu{
+        display: none;
+    }
+    .video_block{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .block_2{
+        display: block;
+    }
+    .sentense1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 61px 90px 54px 90px;
+}
+    .sentense1 p {
+    font-size: 33px;
+}
+.container2 {
+    width: 400px;
+    height: 540px;
+}
+
+.container2 p {
+    font-size: 22px;
+}
+
+.purchase-button {
+    font-size: 22px;
+}
+}
+
+@media screen and (max-width: 880px) {
+    .sentense1 p {
+    font-size: 30px;
+}
+video {
+    max-width: 500px;
+    height: auto;
+}
+
+.container1 p {
+    font-size: 20px;
+    margin: 30px 25px;
+}
+.sentense1 {
+    padding: 61px 70px 54px 70px;
+}
+.container2{
+    width: 300px;
+    height: 500px;
+}
+.container2 p{
+    font-size: 18px;
+}
+.purchase-button{
+    font-size: 18px;
+}
+.two_blocks_one h2,
+.two_blocks_two h2 {
+    font-size: 26px;
+}
+}
+
+@media screen and (max-width: 880px){
+    .four_blocks{
+        display: block;
+    }
+    .two_blocks_one h2,
+    .two_blocks_two h2 {
+    font-size: 24px;
+}
+}
+@media screen and (max-width: 540px) {
+    .sentense1 p {
+        font-size: 28px;
+    }
+    video {
+        max-width: 400px;
+        height: auto;
+    }
+
+    .container1 p {
+        font-size: 18px;
+        margin: 30px 25px;
+    }
+    .sentense1 {
+        padding: 61px 50px 54px 50px;
+    }
+    .chomy_oburaut h2 {
+    font-size: 40px;
+}
+}
+
+@media screen and (max-width: 440px){
+    .header {
+    font-size: 34px;
+    
+    }
+    .nazva{
+        margin-top: 85px;
+    }
+    .sentense1 p {
+        font-size: 24px;
+    }
+    video {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .container1 p {
+        font-size: 16px;
+        margin: 15px 15px;
+    }
+    .sentense1 {
+        padding: 61px 30px 54px 30px;
+    }
+    .chomy_oburaut h2 {
+    font-size: 36px;
+}
+.two_blocks_one h2,
+.two_blocks_two h2 {
+    font-size: 22px;
+}
+}
